@@ -12,7 +12,6 @@ Two sets of predictor variables were assessed - Life status (Dead/Stump vs alive
 When building the base model for Life Status, it was observed that the model had 100% accuracy. Upon further EDA of the predictor variables, it was clear that any tree classified as "Dead/Stump" had little further information on the tree plot - therefore, it was best to scrap this target variable, and build a new model. This model was kept as part of our Conclusions/Next steps, in order to further better the dataset.
 
 ## Predicting Problems Status
-
 Problems status was the clearest indicator of a tree needing attention within the dataset (before turning to dead/stump). A multitude of predictor variables were included: 
 * Community support (community board, steward(s), assessor)
 * Tree details (species, guards, trunk diameter, alive/dead status)
