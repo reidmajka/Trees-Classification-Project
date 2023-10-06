@@ -1,6 +1,8 @@
 # Trees-Classification-Project
 Flatiron School - Phase 3 Classification project
 
+![NYC street with trees on each side, taken from middle of road looking down road](https://www.decoderny.com/asserts/articles/details_page/details-street-tree-smarts.png)
+
 New York city has over 680,000 trees planted on "the street" (sidewalk, medians, etc.). It's no surprise that it takes a substantial Parks Department to manage these trees, and ensure optimal health and growth. Maintaining an urban canopy is crucial to the health and success of a city's environment and human population - it's estimated that $60M is diverted from the healthcare system annually through the existence of our urban canopy (1).
 
 Using data from NYC Opendata, create a machine-learning model to predict whether a street tree is in need of care and/or replacement. This will provide NYC Parks department with an optimized model to prioritize trees needing care, minimizing resources to fix and increase the canopy across the city
