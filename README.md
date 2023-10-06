@@ -20,11 +20,25 @@ Problems status was the clearest indicator of a tree needing attention within th
 ### Baseline Model
 The baseline model resulted in 98% precision, 88% Accuracy, and 70% recall. The goal is to aim for higher recall, to minimize chance a tree with problems is classified as “normal”, when in fact it needs attention. 
 
+Note: a decision tree model was constructed after the base logistic regression model, and the scores were significantly lower; therefore, logistic regression models
+
 ### Optimized Model
 A few different hyper-parameters were tuned in order to increase the scores of the baseline model. This included the following:
 * Increased iterations
 * Threshold of 35%: lowering the threshold did slightly decrease accuracy, though the offsetting increase in recall was substantial enough to use this value
 * Lower regularization strength: given that the dataset was largely regular to begin with, it made sense to lower this parameter
-
+* Balancing the dataset: given the large amount of data rows, downsizing on the majority class (no problems) was performed, resulting in lower scores across the board. Therefore, the original dataframe was retained in the optimal model.
+* solvers and penalties: ridge penalty and liblinear solver was assessed, returning lower scores than lasso and lbfgs solvers.
+  
+The resulting optimized Logistic Regression model returned scores of 90% precision, 87% Accuracy, and 75% recall. 
 
 ## Conclusions & Next Steps
+Overall the model is strong enough to predict whether a given tree might have a problem, and the model will be used to improve trees across the city.
+Prioritize re-planting at these sites with dead trees (or 
+stumps)
+* Predictions on Health status vary – the model is good at predicting if the tree is alive, but more information is needed to predict if it is in sub-optimal health
+* Most importantly: just go outside and check! Call 311 if you see a tree in need.
+
+### Next Steps:
+* Partner with parks department to revisit trees in suboptimal health, and gather better data parameters in order to better tune the model
+* Gather incremental data to increase performance: Zoning district, air quality, demographics of surrounding population
