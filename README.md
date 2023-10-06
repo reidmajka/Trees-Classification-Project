@@ -22,6 +22,9 @@ Problems status was the clearest indicator of a tree needing attention within th
 ### Baseline Model
 The baseline model resulted in 98% precision, 88% Accuracy, and 70% recall. The goal is to aim for higher recall, to minimize chance a tree with problems is classified as “normal”, when in fact it needs attention. 
 
+![image](https://github.com/reidmajka/Trees-Classification-Project/assets/98117376/52aa5d12-d83f-489f-8977-67794aa433be)
+
+
 Note: a decision tree model was constructed after the base logistic regression model, and the scores were significantly lower; therefore, logistic regression models
 
 ### Optimized Model
