@@ -32,7 +32,7 @@ A few different hyper-parameters were tuned in order to increase the scores of t
   
 The resulting optimized Logistic Regression model returned scores of 90% precision, 87% Accuracy, and 75% recall. 
 
-## Conclusions & Next Steps
+## Conclusions & Next Steps 
 Overall the model is strong enough to predict whether a given tree might have a problem, and the model will be used to improve trees across the city.
 Prioritize re-planting at these sites with dead trees (or 
 stumps)
